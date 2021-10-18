@@ -7,7 +7,7 @@ $headings: 'Source Sans Pro', sans-serif;
 $text: 'Lato', sans-serif;
 $transition: .3s ease;
 $font: 16px;
-$white #fff;
+$white: #fff;
 /***************
 basic styles
 ***************/
@@ -21,7 +21,56 @@ body {
     font-size: $font;
     color: $gray;
     line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings;
+}
+/***************
+aside
+***************/
+aside {
+    flex: 1;
+    background-image: linear-gradient(rgba($gray, .9), rgba($pink, .9)), url(img/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 60px;
+    img {
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid $pink;
+    }
+    h1 {
+        color: $white;
+        font-weight: 300;
+        padding: 30px 0;
+        span {
+            color: $green;
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+    a {
+        color: $green;
+        margin-left: 20px;
+        font-size: 2rem;
+        &:hover {
+            color: $white;
+            transition: $transition;
+        }
+    }
+}
+/***************
+main
+***************/
+.main {
+    flex: 2;
 }
