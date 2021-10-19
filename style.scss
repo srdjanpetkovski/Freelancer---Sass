@@ -112,6 +112,8 @@ main
 .main {
     flex: 2;
     padding: 40px;
+    overflow: scroll;
+    height: 100vh;
     .about {
         button {
             @include btn;
@@ -119,5 +121,36 @@ main
         &::after {
             @include line;
         }
+    }
+    .portfolio .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 35px;
+        .col{
+            flex: 0 0 48%;
+            img {
+                width: 100%;
+                &:hover {
+                    opacity: .6;
+                    transition: $transition;
+                    transform: scale(1.1);
+                }
+            }
+            h4 {
+                font-size: 1.7rem;
+                color: $pink;
+                padding: 20px 0;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    button {
+        @include btn;
+    }
+    &::after {
+        @include line;
     }
 }
