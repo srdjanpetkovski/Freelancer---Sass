@@ -207,4 +207,69 @@ main
   background: #f2f2f2;
   margin: 20px 0;
 }
+
+.main footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main footer .row form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 68%;
+          flex: 0 0 68%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main footer .row form button {
+  color: #fff;
+  background: #9c7a97;
+  border: none;
+}
+
+.main footer .row form button:hover {
+  background: #8bebcd;
+}
+
+.main footer .row form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.main footer .row form textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-top: 22px;
+  background: #f2f2f2;
+  border: none;
+  padding: 10px;
+}
+
+.main footer .row .contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+
+.main footer .row .contact i {
+  color: #9c7a97;
+}
 /*# sourceMappingURL=style.css.map */
