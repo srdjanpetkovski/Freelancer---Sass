@@ -80,6 +80,13 @@ aside {
     align-items: flex-end;
     text-align: right;
     padding-right: 60px;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+        height: 80vh;
+    }
     img {
         width: 40%;
         border-radius: 50%;
@@ -114,6 +121,12 @@ main
     padding: 40px;
     overflow: scroll;
     height: 100vh;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        padding: 20px;
+        text-align: justify;
+        height: auto;
+    }
     .about {
         button {
             @include btn;
@@ -129,6 +142,9 @@ main
         margin-top: 35px;
         .col{
             flex: 0 0 48%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             img {
                 width: 100%;
                 &:hover {
@@ -154,15 +170,22 @@ main
         @include line;
     }
     footer {
+        @media(max-width: 768px) {
+            margin-top: 20px;
+        }
         .row {
             display: flex;
             margin-top: 30px;
             justify-content: space-between;
+            flex-wrap: wrap;
             form {
                 flex: 0 0 68%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+                }
                 button {
                     color: $white;
                     background: $pink;
@@ -189,6 +212,10 @@ main
                 flex: 0 0 28%;
                 line-height: 2.5;
                 font-size: 1.2rem;
+                @media(max-width: 768px) {
+                    margin-top: 30px;
+                    line-height: 2;
+                }
                 i {
                     color: $pink;
                 }

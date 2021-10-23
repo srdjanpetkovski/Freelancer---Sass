@@ -71,6 +71,20 @@ aside {
   padding-right: 60px;
 }
 
+@media (max-width: 768px) {
+  aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 80vh;
+  }
+}
+
 aside img {
   width: 40%;
   border-radius: 50%;
@@ -112,6 +126,17 @@ main
   padding: 40px;
   overflow: scroll;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 20px;
+    text-align: justify;
+    height: auto;
+  }
 }
 
 .main .about button {
@@ -157,6 +182,14 @@ main
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+  .main .portfolio .row .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main .portfolio .row .col img {
@@ -208,6 +241,12 @@ main
   margin: 20px 0;
 }
 
+@media (max-width: 768px) {
+  .main footer {
+    margin-top: 20px;
+  }
+}
+
 .main footer .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +255,8 @@ main
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main footer .row form {
@@ -230,6 +271,14 @@ main
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .main footer .row form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main footer .row form button {
@@ -267,6 +316,13 @@ main
           flex: 0 0 28%;
   line-height: 2.5;
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .main footer .row .contact {
+    margin-top: 30px;
+    line-height: 2;
+  }
 }
 
 .main footer .row .contact i {
